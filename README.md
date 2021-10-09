@@ -51,7 +51,9 @@
       
       Cuando un evento ocurre en un elemento, este primero ejecuta los eventos/funciones que tiene asignados,
       luego los eventos/funciones del padre, y así hasta otros ancestros.
-      ![image](./images/propagacion.png)
+      
+     <img src="/images/propagacion.png" alt="Ejemplo Propagación Eventos" style="height: 200px; width:410px;"/>
+ 
       Así si hacemos click en <p>, entonces, veremos 3 eventos: p → div → form.
 
       Este proceso se conoce como “propagación” porque los eventos “se propagan” desde el elemento más al
