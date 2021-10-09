@@ -37,23 +37,25 @@
 
 
 - ### preventDefault
-      Previene que la acción por defecto asociada o las funciones incorporados en el elemento del DOM se ejecuten.
+      Previene que la acción por defecto asociada o las funciones incorporados en el elemento del DOM se
+      ejecuten.
       Es una función dentro dentro de un objeto y no funciona sin su evento.
       
 - ### stopPropagation
-      Evita que se realize la propagación de los eventos/funciones hacia los ancentros del elemento,en otras palabras,
-      se detiene el efecto burbuja, pero todos los eventos/funciones en el elemento actual se ejecutarán.
+      Evita que se realize la propagación de los eventos/funciones hacia los ancentros del elemento,en 
+      otras palabras, se detiene el efecto burbuja, pero todos los eventos/funciones en el elemento actual
+      se ejecutarán.
       
 - ### Propagación de eventos
   **Principio de Propagación**
       
       Cuando un evento ocurre en un elemento, este primero ejecuta los eventos/funciones que tiene asignados,
       luego los eventos/funciones del padre, y así hasta otros ancestros.
-      ![image]
+      ![image](./images/propagacion.png)
       Así si hacemos click en <p>, entonces, veremos 3 eventos: p → div → form.
 
-      Este proceso se conoce como “propagación” porque los eventos “se propagan” desde el elemento más al interior,
-      a través de los padres, como una burbuja en el agua
+      Este proceso se conoce como “propagación” porque los eventos “se propagan” desde el elemento más al
+      interior a través de los padres, como una burbuja en el agua.
       
 - ### Fases de los eventos
 
