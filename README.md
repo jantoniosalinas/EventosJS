@@ -60,6 +60,48 @@
       interior a través de los padres, como una burbuja en el agua.
       
 - ### Fases de los eventos
+ 1. Fase de Captura
+    Cuando el evento desciende hasta llegar al elemento
+ 2. Fase de Objetivo
+    Cuando el evento alcanza al elemento.
+ 3. Fase de Propagación
+    Cuando el evento se propaga de elemento hacia arriba como un efecto burbuja.
+ 
+    Sí definimos un evento en el elemento <td> entonces las diversas fases se pueden explicar de la siguiente manera:
+    
+         <html>
+          <body>
+           <table>
+            <tr>
+             <td>
+              
+       **Fase de Captura** - el evento pasa a través de los ancestros que son **HTML, BODY, TABLE, TR** hasta alcanzar el elemento **_TD_**.
+              
+       **Fase de Objetivo/Target** - una vez alcanzado el elemento, el evento de ejecuta o desencadena.
+              
+       **Fase de Propagación** - cuando se regresa hacia los ancestros y va ejecutando los eventos que se encuentre en el camino ya que ahora
+                                 la ruta será **_TD_**, **TR, TABLE, BODY, HTML**.
+ 
+ ### Event Emitter y eventos en NodeJS
+    Todos los objetos que emiten eventos son instancias de events.EventEmmiter y permite escuchar "eventos" y asignar acciones
+    para ejecutar cuando se producen esos eventos, y aquí podemos emitir eventos por nuestra cuenta, cuando se quiera y no en 
+    función de la interacción con el usuario, y se basan el principio llamado "modelo de publicación/suscripción", porque 
+    podemos suscribirnos a eventos y luego publicarlos.
+              
+              
+## Reto: Propagación de eventos
+Resolver el siguiente reto [Propagación de Eventos](https://codepen.io/driverinside/pen/MWmOOee).
 
-### Event Emitter y eventos en NodeJS
-* sapo
+   <img src="/images/reto1.png" alt="Ejemplo Propagación Eventos" style="height: 300px; width:410px;"/>              
+
+Evitar la propagación de eventos, ya que se define un evento en el elemento **button** y en el elemento **div**.
+              
+**Solución:**
+              
+       Se coloca el evento stopPropagation en el elemento más interno que en este caso es button y con ello evitar la
+       propgación o efecto burbuja hacia el elemento div.
+
+   <img src="/images/reto2.png" alt="Ejemplo Propagación Eventos" style="height: 300px; width:410px;"/>
+   <img src="/images/reto3.png" alt="Ejemplo Propagación Eventos" style="height: 300px; width:410px;"/>
+              
+ 
