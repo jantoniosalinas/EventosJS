@@ -92,16 +92,16 @@
 ## Reto: Propagación de eventos
 Resolver el siguiente reto [Propagación de Eventos](https://codepen.io/driverinside/pen/MWmOOee).
 
-   <img src="/images/reto1.png" alt="Ejemplo Propagación Eventos" style="height: 300px; width:410px;"/>              
-
+   <img src="/images/reto1.png" alt="Ejemplo Propagación Eventos" style="height: 460px; width:1000px;"/>              
+   <img src="/images/reto2.png" alt="Ejemplo Propagación Eventos" style="height: 460px; width:1000px;"/>
 Evitar la propagación de eventos, ya que se define un evento en el elemento **button** y en el elemento **div**.
               
 **Solución:**
               
        Se coloca el evento stopPropagation en el elemento más interno que en este caso es button y con ello evitar la
-       propgación o efecto burbuja hacia el elemento div.
+       propagación o efecto burbuja hacia el elemento div.
 
-   <img src="/images/reto2.png" alt="Ejemplo Propagación Eventos" style="height: 300px; width:410px;"/>
-   <img src="/images/reto3.png" alt="Ejemplo Propagación Eventos" style="height: 300px; width:410px;"/>
+   
+   <img src="/images/reto3.png" alt="Ejemplo Propagación Eventos" style="height: 460px; width:1000px;"/>
               
  
